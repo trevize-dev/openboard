@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/store-sqlite" },
+    { "path": "packages/server" },
+    { "path": "packages/sdk" },
+    { "path": "packages/cli" }
+  ]
+}

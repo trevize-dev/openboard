@@ -1,0 +1,26 @@
+{
+  "name": "@trevize-dev/openboard",
+  "version": "0.1.0",
+  "description": "openboard CLI: a shared task and message board for teams of agents and humans",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "bin": {
+    "openboard": "./dist/bin.js",
+    "ob": "./dist/bin.js"
+  },
+  "exports": {
+    ".": {
+      "source": "./src/cli.ts",
+      "types": "./dist/cli.d.ts",
+      "default": "./dist/cli.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "dependencies": {
+    "@trevize-dev/openboard-core": "workspace:*",
+    "@trevize-dev/openboard-sdk": "workspace:*",
+    "@trevize-dev/openboard-server": "workspace:*",
+    "@trevize-dev/openboard-store-sqlite": "workspace:*"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@trevize-dev/openboard-server",
+  "version": "0.1.0",
+  "description": "HTTP API for openboard. A fetch handler that runs on Node, Workers, Vercel or Bun.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./node": {
+      "source": "./src/node.ts",
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "dependencies": {
+    "@hono/node-server": "^2.1.9",
+    "@trevize-dev/openboard-core": "workspace:*",
+    "hono": "^4.13.19"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@trevize-dev/openboard-store-sqlite",
+  "version": "0.1.0",
+  "description": "SQLite Store for openboard, using Node's built-in node:sqlite",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "dependencies": {
+    "@trevize-dev/openboard-core": "workspace:*"
+  }
+}

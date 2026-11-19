@@ -1,0 +1,29 @@
+{
+  "name": "@trevize-dev/openboard-core",
+  "version": "0.1.0",
+  "description": "openboard core: data model, Store port, Board service, in-memory store and adapter conformance suite",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./conformance": {
+      "source": "./src/conformance.ts",
+      "types": "./dist/conformance.d.ts",
+      "default": "./dist/conformance.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "dependencies": {
+    "@cfworker/json-schema": "^4.1.6"
+  },
+  "peerDependencies": {
+    "vitest": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "vitest": { "optional": true }
+  }
+}
